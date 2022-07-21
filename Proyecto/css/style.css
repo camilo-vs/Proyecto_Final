@@ -75,7 +75,6 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #000;
 }
 
 [tabindex="-1"]:focus {
@@ -510,20 +509,6 @@ mark,
   content: "\2014\00A0";
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-.img-thumbnail {
-  padding: 0.25rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  max-width: 100%;
-  height: auto;
-}
-
 .figure {
   display: inline-block;
 }
@@ -578,8 +563,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -5026,23 +5011,6 @@ input[type="button"].btn-block {
   bottom: 0;
   left: 0;
   padding: 1.25rem;
-}
-
-.card-img {
-  width: 100%;
-  border-radius: calc(0.25rem - 1px);
-}
-
-.card-img-top {
-  width: 100%;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-}
-
-.card-img-bottom {
-  width: 100%;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
 .card-deck {
@@ -10640,7 +10608,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: normal;
-  background: #f8f9fd;
+  background: url(../images/fondo.jpg);
   color: gray;
 }
 
@@ -10686,7 +10654,7 @@ h5,
 }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 14em 0;
 }
 
 .ftco-no-pt {
@@ -10768,7 +10736,7 @@ h5,
   outline: none !important;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 1px solid #01d28e;
+  border: 1px solid #efb810;
 }
 
 .field-icon {
@@ -10800,7 +10768,7 @@ h5,
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
-  color: #01d28e;
+  color: #efb810;
   font-weight: 700;
 }
 
@@ -10909,8 +10877,8 @@ h5,
   outline: none;
 }
 .btn.btn-primary {
-  background: #01d28e !important;
-  border: 1px solid #01d28e !important;
+  background: #efb810 !important;
+  border: 1px solid #efb810 !important;
   color: #fff !important;
 }
 .btn.btn-primary:hover {
@@ -10927,4 +10895,9 @@ h5,
   border: 1px solid transparent;
   background: #01d28e;
   color: #fff;
+}
+
+.logo {
+  margin-top: 25px;
+  margin-left: 20px;
 }
