@@ -9,14 +9,14 @@
     <meta name="author" content="" />
     <title>Empleado-Producto</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">LA EUROPEA</a>
+        <a class="navbar-brand ps-3" href="principal.html">LA EUROPEA</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -35,7 +35,7 @@
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="login.html">Cerrar Sesion</a></li>
+                    <li><a class="dropdown-item" href="../index.html">Cerrar Sesion</a></li>
                 </ul>
             </li>
         </ul>
@@ -70,26 +70,17 @@
             <main>
                 <div class="container-fluid px-4">
                     <div class="row">
-                        <div class="col-xl-6 mt-5">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-area me-1"></i>
-                                    Entradas
-                                </div>
-                                <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                            </div>
+                        <div class="col-md-10">
+                            <h1 class="mt-4">Productos</h1>
                         </div>
-                        <div class="col-xl-6 mt-5">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-bar me-1"></i>
-                                    Salidas
-                                </div>
-                                <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                            </div>
+                        <div class="col-md-2 mt-5">
+                            <h1><a href="reguistrarProduc.html" class="agregar"><i class="fa fa-plus-circle"
+                                        aria-hidden="true"></i>
+                                    Agregar</button></a></h1>
                         </div>
+
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4 mt-5">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
                             DataTable Example
@@ -198,10 +189,10 @@
     </script>
     <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="../assets/demo/chart-area-demo.js"></script>
+    <script src="../assets/demo/chart-bar-demo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-    <script src="js/datatables-simple-demo.js"></script>
+    <script src="../js/datatables-simple-demo.js"></script>
 </body>
 
 </html>
