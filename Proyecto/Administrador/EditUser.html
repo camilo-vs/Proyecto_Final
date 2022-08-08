@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>Nueva Categoria</title>
+  <title>Nueva Marca</title>
   <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
   <link href="../css/styles.css" rel="stylesheet" />
   <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -47,59 +47,84 @@
     <div id="layoutSidenav_content">
       <main>
         <div class="container-fluid px-4">
-          <h1 class="mt-4">Categoria</h1>
+          <h1 class="mt-4">Usuarios</h1>
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active">Registrar</li>
+            <li class="breadcrumb-item active">Editar</li>
           </ol>
         </div>
-
-        <main>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-12">
-                <div class="card shadow-lg border-0 rounded-lg mt-5">
-                  <div class="card-header">
-                    <h3 class="text-center font-weight-light my-4">
-                      Registrar Categoria
-                    </h3>
-                  </div>
-                  <div class="card-body">
-                    <form>
-                      <div class="row mb-3">
-                        <div class="col-md-12">
-                          <div class="form-floating mb-3 mb-md-0">
-                            <input class="form-control" id="inputFirstName" type="text"
-                              placeholder="Enter your first name" />
-                            <label for="inputFirstName">Nombre</label>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="card shadow-lg border-0 rounded-lg mt-5">
+                    <div class="card-header">
+                      <h3 class="text-center font-weight-light my-4">
+                        Editar Usuario
+                      </h3>
+                    </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="row mb-3">
+                          <div class="col-md-12">
+                            <div class="form-floating mb-3 mb-md-0">
+                              <input class="form-control" id="inputFirstNumber" type="text"
+                                placeholder="Enter your first name" />
+                              <label for="inputFirstNumber">Numero de Empleado</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-md-12">
+                            <div class="form-floating mb-3 mb-md-0">
+                              <input class="form-control" id="inputName" type="text"
+                                placeholder="Create a Name" />
+                              <label for="inputName">Nombre</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-md-12">
+                            <div class="form-floating mb-3 mb-md-0">
+                              
+                              <select class="form-control" name="" id="">
+                                <option value="">Administrador</option>
+                                <option value="" selected>Empleado</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-md-4">
-
+  
                           </div>
                           <div class="botonG mt-4 mb-0 col-lg-4">
                             <div class="d-grid">
-                              <input value="Agregar" target="_parent" onclick="nuevoProducto()" type="button"
+                              <input value="Agregar" target="_parent" onclick="nuevoUsuario()" type="button"
                                 class="form-control btn btn-enviar rounded submit px-3" />
                             </div>
                           </div>
                         </div>
-                    </form>
+  
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </main>
+        </div>
+      </main>
       </main>
 
     </div>
   </div>
-  <script language="JavaScript">
-    function nuevoProducto() {
 
-      window.location = "ListCategories.html";
-      window.alert("Categoria Agregada");
+  <script language="JavaScript">
+    function nuevoUsuario() {
+
+      window.location = "ListUser.html";
+      window.alert("Usuario Agregada");
 
     }
   </script>
