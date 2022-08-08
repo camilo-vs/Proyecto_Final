@@ -1,83 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-	<title>Login</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-	<link rel="stylesheet" href="css/style.css">
+  <body>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 col-lg-5">
+            <div class="wrap">
+              <div class="text-center">
+                <img
+                  src="./images/logo.jpg"
+                  width="330px"
+                  alt="Logo de la empresa"
+                  class="logo"
+                />
+              </div>
 
-</head>
+              <div class="login-wrap p-4 p-md-5">
+                <div class="d-flex">
+                  <div class="w-100">
+                    <h3 class="text-center">Iniciar Sesión</h3>
+                  </div>
+                </div>
+                <form name="login" class="signin-form">
+                  <div class="form-group mt-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="usuario"
+                      required
+                    />
+                    <label class="form-control-placeholder" for="username"
+                      >Usuario</label
+                    >
+                  </div>
+                  <div class="form-group mt-4">
+                    <input
+                      id="password-field"
+                      type="password"
+                      name="password"
+                      class="form-control"
+                      required
+                    />
+                    <label class="form-control-placeholder" for="password"
+                      >Contraseña</label
+                    >
+                    <span
+                      toggle="#password-field"
+                      class="fa fa-fw fa-eye field-icon toggle-password"
+                    ></span>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      value="Ingresar"
+                      target="_parent"
+                      onclick="Login()"
+                      type="button"
+                      class="form-control btn btn-primary rounded submit px-3"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<body>
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-7 col-lg-5">
-					<div class="wrap">
-						<div class="text-center">
-							<img src="./images/logo.jpg" width="330px" alt="Logo de la empresa" class="logo">
-						</div>
-
-
-						<div class="login-wrap p-4 p-md-5">
-							<div class="d-flex">
-								<div class="w-100">
-									<h3 class="text-center">Iniciar Sesión</h3>
-								</div>
-							</div>
-							<form name="login" class="signin-form">
-								<div class="form-group mt-3">
-									<input type="text" class="form-control" name="usuario" required>
-									<label class="form-control-placeholder" for="username">Usuario</label>
-								</div>
-								<div class="form-group mt-4">
-									<input id="password-field" type="password" name="password" class="form-control"
-										required>
-									<label class="form-control-placeholder" for="password">Contraseña</label>
-									<span toggle="#password-field"
-										class="fa fa-fw fa-eye field-icon toggle-password"></span>
-								</div>
-								<div class="form-group">
-
-									<input value="Ingresar" target="_parent" onclick="Login()" type="button"
-										class="form-control btn btn-primary rounded submit px-3" />
-								</div>
-							</form>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<script language="JavaScript">
-		function Login() {
-			var done = 0;
-			var usuario = document.login.usuario.value;
-			var password = document.login.password.value;
-			if (usuario == "empleado" && password == "123") {
-				window.location = "Empleado/principal.html";
-			}
-			if (usuario == "admin" && password == "123") {
-				window.location = "Administrador/principal.html";
-			}
-			if (usuario == "" && password == "") {
-				window.location = "index.html";
-				window.alert("Credenciales invalidas");
-			}
-		}
-	</script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
-
-</body>
-
+    <script language="JavaScript">
+      function Login() {
+        var done = 0;
+        var usuario = document.login.usuario.value;
+        var password = document.login.password.value;
+        if (usuario == "empleado" && password == "123") {
+          window.location = "Empleado/principal.html";
+        }
+        if (usuario == "admin" && password == "123") {
+          window.location = "Administrador/principal.html";
+        }
+        if (usuario == "" && password == "") {
+          window.location = "index.html";
+          window.alert("Credenciales invalidas");
+        }
+      }
+    </script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
